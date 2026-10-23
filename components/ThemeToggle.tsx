@@ -1,15 +1,19 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore, useState, useEffect } from "react";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    setTheme(saved === "dark" ? "dark" : "light");
-    setMounted(true);
-  }, []);
+const [theme, setTheme] = useState<"light" | "dark">(() =>
+  typeof window === "undefined"
+    ? "light"
+    : localStorage.getItem("theme") === "dark"
+      ? "dark"
+      : "light",
+);
+const mounted = useSyncExternalStore(
+  () => () => {},
+  () => true,
+  () => false,
+);
 
   useEffect(() => {
     if (!mounted) return;
