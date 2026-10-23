@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "name": "Next.js Migration",
+    "status": "active",
+    "description": "Migrate legacy app to Next.js App Router.",
+    "team": ["Alice", "Bob", "Charlie"],
+    "tasks": [
+      { "title": "Setup routing", "done": true },
+      { "title": "Migrate components", "done": false }
+    ],
+    "activity": ["Project created", "Routing configured"]
+  },
+  {
+    "id": "2",
+    "name": "Dashboard Revamp",
+    "status": "completed",
+    "description": "Redesign dashboard with streaming UI.",
+    "team": ["Dana", "Evan"],
+    "tasks": [{ "title": "Design sidebar", "done": true }],
+    "activity": ["Dashboard shipped"]
+  },
+  {
+    "id": "3",
+    "name": "API Gateway",
+    "status": "active",
+    "description": "Build gateway for microservices.",
+    "team": ["Frank", "Grace"],
+    "tasks": [{ "title": "Auth middleware", "done": false }],
+    "activity": ["Gateway scaffolded"]
+  },
+  {
+    "id": "4",
+    "name": "Mobile App",
+    "status": "on-hold",
+    "description": "Companion mobile application.",
+    "team": ["Hannah"],
+    "tasks": [],
+    "activity": ["Paused"]
+  },
+  {
+    "id": "5",
+    "name": "Docs Portal",
+    "status": "active",
+    "description": "Documentation site for projects.",
+    "team": ["Ivan", "Judy"],
+    "tasks": [{ "title": "MDX setup", "done": true }],
+    "activity": ["Docs initialized"]
+  },
+  {
+    "id": "6",
+    "name": "Analytics Engine",
+    "status": "completed",
+    "description": "Real-time analytics pipeline.",
+    "team": ["Karl", "Liam"],
+    "tasks": [{ "title": "Kafka integration", "done": true }],
+    "activity": ["Pipeline live"]
+  }
+]
